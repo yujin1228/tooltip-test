@@ -1,0 +1,30 @@
+.confirm-wrapper {
+  color: #999;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.confrim-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.confirm-btn-wrapper {
+  button {
+    float: right;
+    margin-top: 5px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

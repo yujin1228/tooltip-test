@@ -1,0 +1,87 @@
+@import "/src/styles/index.scss";
+
+@mixin button-color($color) {
+  background-color: $color;
+  &::after,
+  &::before {
+    background-color: $color;
+  }
+
+  &:hover {
+    color: $color;
+    background-color: #fff;
+    border-radius: none;
+
+    &::after,
+    &::before {
+      width: 100%;
+      transition: 800ms ease all;
+    }
+  }
+}
+
+button {
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  position: relative;
+  transition: 400ms ease all;
+  margin: 2px;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &::after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  // size
+  &.medium {
+    width: 70px;
+    font-size: 1rem;
+  }
+
+  &.small {
+    width: 34px;
+    font-size: 0.75rem;
+  }
+
+  &.large {
+    width: 150px;
+  }
+
+  // color
+  &.green {
+    @include button-color($green);
+  }
+
+  &.pink {
+    @include button-color($pink);
+  }
+
+  &.yellow {
+    @include button-color($yellow);
+    color: $black;
+  }
+
+  &.gray {
+    @include button-color($gray);
+  }
+
+  &.black {
+    @include button-color($black);
+  }
+}
