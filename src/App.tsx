@@ -20,6 +20,7 @@ function App() {
   return (
     <>
       <div className="container-layout">
+        <h1>과제전형 - 지원자: 최유진</h1>
         <Demo1 content={contentSample1} />
         <Demo2 content={contentSample1} />
         <Demo3 />
