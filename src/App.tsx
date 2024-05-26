@@ -21,8 +21,14 @@ function App() {
     <>
       <div className="container-layout">
         <h1>과제전형 - 지원자: 최유진</h1>
-        <Demo1 content={contentSample1} />
-        <Demo2 content={contentSample1} />
+        {/* 
+        Demo1 - 12개방향 툴팁, 부모컨테이너 overflow: scroll 툴팁
+        Demo2 - enter-delay 1s / leave-delay 1s / hover not hidden
+        Demo3 - 아이콘,텍스트,버튼 등 다양한 툴팁내용
+        DemoColor - 스타일커스텀(색상) 툴팁
+        DemoDisable - 특정상태에 따라 노출여부가 결정되는 툴팁 
+        */}
+        <Demo1 content={contentSample1} /> <Demo2 content={contentSample1} />
         <Demo3 />
         <DemoColor />
         <DemoDisable content={contentSample2} />
