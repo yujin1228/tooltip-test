@@ -4,9 +4,7 @@
 
 ### 🔧 Used Skills
 
-<img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
-<img src="https://img.shields.io/badge/Scss-CC6699?style=flat-square&logo=Sass&logoColor=white"/>
+<img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/><img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/><img src="https://img.shields.io/badge/Scss-CC6699?style=flat-square&logo=Sass&logoColor=white"/>
 
 </br>
 
