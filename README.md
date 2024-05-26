@@ -1,4 +1,4 @@
-b# 툴팁 컴포넌트 구현 과제
+# 툴팁 컴포넌트 구현 과제
 
 > 테라인터내셔널 FE 과제 테스트
 
@@ -25,6 +25,8 @@ b# 툴팁 컴포넌트 구현 과제
 </br>
 
 ### 💡 구현 로직
+
+[🔗 Tooltip.tsx](https://github.com/yujin1228/tooltip-test/blob/main/src/components/tooltip/Tooltip.tsx)
 
 1. Tooltip 컴포넌트는 `툴팁 컨텐츠`, `감쌀 요소`, `툴팁 방향`, `delay 시간`, `커스텀스타일`, `툴팁 배경색`, `툴팁노출여부`, `hoverNotHidden` 을 props로 받습니다.
 
@@ -80,7 +82,7 @@ useEffect(() => {
   }, [isActvie, disabled, openDelay, closeDelay]);
 ```
 
-4. 툴팁의 위치는 `getBoundingClientRect()`를 사용하여 mouseover 이벤트가 발생한 요소의 x, y 좌표 및 너비와 높이를 얻은 후, 툴팁 방향값에 따라 계산합니다. 좌표 계산은 [`calculateTooltipPosition`]() 함수를 이용해 수행됩니다
+4. 툴팁의 위치는 `getBoundingClientRect()`를 사용하여 mouseover 이벤트가 발생한 요소의 x, y 좌표 및 너비와 높이를 얻은 후, 툴팁 방향값에 따라 계산합니다. 좌표 계산은 [`calculateTooltipPosition`](https://github.com/yujin1228/tooltip-test/blob/main/src/utils/tooltipPositionCalculator.ts) 함수를 이용해 수행됩니다
 
 ```tsx
 const handleMouseOver = () => {
